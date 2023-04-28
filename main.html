@@ -1,46 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
     <form>
         <h1>Feedback Form</h1>
         <div>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" required>
-        </div><br>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" minlength="3" maxlength="50" required>
+    </div>
         <div>
-            <label for="portfolio">User Webpage</label>
-            <input type="textaretextarea" name="portfolio" id="portfolio" required>
-        </div><br>
-        <div>
-            <label for="portfolio">User Webpage</label>
-            <input type="text" name="portfolio" id="portfolio">
-        </div><br>
-        <div>
-            <label for="favColor">favColor</label>
-            <select>
-                <option>red</option>
-                <option>green</option>
-                <option>black</option>
-            </select>
-        </div><br>
-        <div>
-            <label for="likeness">likeness</label>
-            <input type="sliders" name="likeness" id="likeness">
-        </div><br>
-
-        <div>
-            <input type="submit" value="submit">
-        </div>
+        <label for="portfolio">Portfolio</label>
+        <input type="url" name="portfolio" id="portfolio" required>
+    </div>
+    <div>
+        <label for="favColor">Fav Color</label>
+        <input type="color" id="favColor">
+    </div>
+    <div>
+        <label for="likeness">Likeness</label>
+        <input type="range" id="likeness" min="1" max="100">
+    </div>
+    <div>
+        <input type="submit" value="Submit">
+    </div>
     </form>
-
 </body>
-
 </html>
